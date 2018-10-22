@@ -1,0 +1,40 @@
+.menu
+	font-size: 0
+	&__item
+		display: block
+		& > .menu__submenu
+			padding-left: 14px
+			padding-top: 12px
+			.menu__link
+				line-height: 1.15
+				font-size: 13px
+				color: $white
+		&:not(:last-child)
+			margin-bottom: 12px
+		&.is-active
+			.menu__link
+				color: $white
+				box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.110479)
+				background-color: $blueDark
+				color: $white
+			> .menu__submenu
+						.menu__link
+							box-shadow: none
+							background-color: transparent
+	&__link
+		font-size: 16px
+		color: $whiteHover
+		text-decoration: none
+		transition: color .24s ease-in-out, background-color .24s ease-in-out, box-shadow .24s ease-in-out
+		font-family: Source Sans Pro
+		font-style: normal
+		font-weight: bold
+		line-height: 1
+		font-size: 15px
+		border-radius: 4px
+		padding: 8px 16px
+		display: block
+		&:hover
+			color: $white
+			box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.110479)
+			background-color: $blueDark

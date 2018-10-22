@@ -1,0 +1,27 @@
+---
+title: Index Page
+---
+extends layouts/_layout
+block content
+
+	include ./partials/_sidebar
+
+	.main
+		include ./partials/_header
+
+		// BEGIN controls
+		.controls
+			.container
+				.search
+					input(type="text" class="search__input" placeholder="Search for something…").input
+					button(class="search__btn" type="button")
+						+icon('search', 'search__icon')
+
+				.selected
+					span(class="selected__counter") 4
+					p(class="selected__text") services enregistrés
+
+				button(class="btn controls__btn") Add
+		// END controls
+
+		include ./partials/_table

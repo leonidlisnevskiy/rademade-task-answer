@@ -1,0 +1,131 @@
+-
+	var titles = [
+	{titleName: 'Title', attr: 'title' },
+	{titleName: 'Role', attr: 'role' },
+	{titleName: 'Service', attr: 'service' },
+	{titleName: 'Company', attr: 'company' },
+	{titleName: 'Status', attr: 'status' },
+	{titleName: 'Date', attr: 'date' },
+	{titleName: 'Actions', attr: 'actions' }
+	]
+
+.container
+	.table
+		.table__thead
+			.table__tr
+				each item in titles
+					.table__th(data-col=item.attr)
+						=item.titleName
+		.table__tbody
+				.table__tr
+					.table__td(data-col="title") Title
+					.table__td(data-col="role") SUPER_ADMIN
+					.table__td(data-col="service") Production
+					.table__td(data-col="company") Aboutgoods
+					.table__td(data-col="status" class="is-online")
+						span(class="status") Connected
+						i.icon-circle
+					.table__td(data-col="date") 19/02/2018
+					.table__td(data-col="actions")
+						a(class="link-dots" href="#")
+							+icon('dots')
+						a(class="link-edit" href="#")
+							+icon('edit')
+				.table__tr
+					.table__td(data-col="title") Title
+					.table__td(data-col="role") SUPER_ADMIN
+					.table__td(data-col="service") Production
+					.table__td(data-col="company") Aboutgoods
+					.table__td(data-col="status" class="is-online")
+						span(class="status") Connected
+						i.icon-circle
+					.table__td(data-col="date") 19/02/2018
+					.table__td(data-col="actions")
+						a(class="link-dots" href="#")
+							+icon('dots')
+						a(class="link-edit" href="#")
+							+icon('edit')
+				.table__tr
+					.table__td(data-col="title") Title
+					.table__td(data-col="role") USER
+					.table__td(data-col="service") Production
+					.table__td(data-col="company") Charal
+					.table__td(data-col="status" class="is-online")
+						span(class="status") Connected
+						i.icon-circle
+					.table__td(data-col="date") 19/02/2018
+					.table__td(data-col="actions")
+						a(class="link-dots" href="#")
+							+icon('dots')
+						a(class="link-edit" href="#")
+							+icon('edit')
+				.table__tr
+					.table__td(data-col="title") Title
+					.table__td(data-col="role") ADMIN
+					.table__td(data-col="service") Sales
+					.table__td(data-col="company") Nestlé
+					.table__td(data-col="status" class="is-online")
+						span(class="status") Connected
+						i.icon-circle
+					.table__td(data-col="date") 29/02/2018
+					.table__td(data-col="actions")
+						a(class="link-dots" href="#")
+							+icon('dots')
+						a(class="link-edit" href="#")
+							+icon('edit')
+				.table__tr
+					.table__td(data-col="title") Title
+					.table__td(data-col="role") ADMIN
+					.table__td(data-col="service") R&D
+					.table__td(data-col="company") Aboutgoods
+					.table__td(data-col="status" class="is-online")
+						span(class="status") Connected
+						i.icon-circle
+					.table__td(data-col="date") 19/02/2018
+					.table__td(data-col="actions")
+						a(class="link-dots" href="#")
+							+icon('dots')
+						a(class="link-edit" href="#")
+							+icon('edit')
+				.table__tr
+					.table__td(data-col="title") Title
+					.table__td(data-col="role") USER
+					.table__td(data-col="service") Production
+					.table__td(data-col="company") Aboutgoods
+					.table__td(data-col="status" class="is-offline")
+						span(class="status") Disconnected
+						i.icon-circle
+					.table__td(data-col="date") 19/02/2018
+					.table__td(data-col="actions")
+						a(class="link-dots" href="#")
+							+icon('dots')
+						a(class="link-edit" href="#")
+							+icon('edit')
+				.table__tr
+					.table__td(data-col="title") Title
+					.table__td(data-col="role") ADMIN
+					.table__td(data-col="service") Production
+					.table__td(data-col="company") Aboutgoods
+					.table__td(data-col="status" class="is-online")
+						span(class="status") Connected
+						i.icon-circle
+					.table__td(data-col="date") 19/02/2018
+					.table__td(data-col="actions")
+						a(class="link-dots" href="#")
+							+icon('dots')
+						a(class="link-edit" href="#")
+							+icon('edit')
+				.table__tr
+					.table__td(data-col="title") Title
+					.table__td(data-col="role") USER
+					.table__td(data-col="service") Sales
+					.table__td(data-col="company") Aboutgoods
+					.table__td(data-col="status" class="is-offline")
+						span(class="status") Disconnected
+						i.icon-circle
+					.table__td(data-col="date") 19/02/2018
+					.table__td(data-col="actions")
+						a(class="link-dots" href="#")
+							+icon('dots')
+						a(class="link-edit" href="#")
+							+icon('edit')

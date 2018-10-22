@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <aside class="sidebar">
+        <div class="sidebar__container">
+          <div class="sidebar__logo">
+            <div class="logo sidebar__logo-icon"><svg class="icon icon-logo logo__icon">
+                <use xlink:href="img/sprite.svg#icon-logo"></use>
+              </svg></div><span class="sidebar__title">CRM</span><span class="sidebar__meta">test</span>
+          </div>
+          <ul class="menu sidebar__menu">
+            <li class="menu__item is-active"><a class="menu__link" href="#">Applications</a>
+              <ul class="menu__submenu">
+                <li class="menu__item"><a class="menu__link" href="#">Nice app 1</a></li>
+              </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">Documentation</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Settings</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Support</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main">
+        <!--BEGIN header-->
+        <header class="header">
+          <div class="container"><a class="btn header__btn" href="#"><svg class="icon icon-arrow-left btn__icon">
+                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+              </svg><span>Back</span></a>
+            <div class="header__title">Administration</div>
+          </div>
+        </header>
+        <!--END header-->
+        <!-- BEGIN controls-->
+        <div class="controls">
+          <div class="container">
+            <div class="search"><input class="search__input input" type="text" placeholder="Search for something…"><button class="search__btn" type="button"><svg class="icon icon-search search__icon">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg></button></div>
+            <div class="selected"><span class="selected__counter">4</span>
+              <p class="selected__text">services enregistrés</p>
+            </div><button class="btn controls__btn">Add</button>
+          </div>
+        </div><!-- END controls-->
+        <div class="container">
+          <div class="table">
+            <div class="table__thead">
+              <div class="table__tr">
+                <div class="table__th" data-col="title">Title</div>
+                <div class="table__th" data-col="role">Role</div>
+                <div class="table__th" data-col="service">Service</div>
+                <div class="table__th" data-col="company">Company</div>
+                <div class="table__th" data-col="status">Status</div>
+                <div class="table__th" data-col="date">Date</div>
+                <div class="table__th" data-col="actions">Actions</div>
+              </div>
+            </div>
+            <div class="table__tbody">
+              <div class="table__tr">
+                <div class="table__td" data-col="title">Title</div>
+                <div class="table__td" data-col="role">SUPER_ADMIN</div>
+                <div class="table__td" data-col="service">Production</div>
+                <div class="table__td" data-col="company">Aboutgoods</div>
+                <div class="table__td is-online" data-col="status"><span class="status">Connected</span><i class="icon-circle"></i></div>
+                <div class="table__td" data-col="date">19/02/2018</div>
+                <div class="table__td" data-col="actions"><a class="link-dots" href="#"><svg class="icon icon-dots ">
+                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                    </svg></a><a class="link-edit" href="#"><svg class="icon icon-edit ">
+                      <use xlink:href="img/sprite.svg#icon-edit"></use>
+                    </svg></a></div>
+              </div>
+              <div class="table__tr">
+                <div class="table__td" data-col="title">Title</div>
+                <div class="table__td" data-col="role">SUPER_ADMIN</div>
+                <div class="table__td" data-col="service">Production</div>
+                <div class="table__td" data-col="company">Aboutgoods</div>
+                <div class="table__td is-online" data-col="status"><span class="status">Connected</span><i class="icon-circle"></i></div>
+                <div class="table__td" data-col="date">19/02/2018</div>
+                <div class="table__td" data-col="actions"><a class="link-dots" href="#"><svg class="icon icon-dots ">
+                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                    </svg></a><a class="link-edit" href="#"><svg class="icon icon-edit ">
+                      <use xlink:href="img/sprite.svg#icon-edit"></use>
+                    </svg></a></div>
+              </div>
+              <div class="table__tr">
+                <div class="table__td" data-col="title">Title</div>
+                <div class="table__td" data-col="role">USER</div>
+                <div class="table__td" data-col="service">Production</div>
+                <div class="table__td" data-col="company">Charal</div>
+                <div class="table__td is-online" data-col="status"><span class="status">Connected</span><i class="icon-circle"></i></div>
+                <div class="table__td" data-col="date">19/02/2018</div>
+                <div class="table__td" data-col="actions"><a class="link-dots" href="#"><svg class="icon icon-dots ">
+                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                    </svg></a><a class="link-edit" href="#"><svg class="icon icon-edit ">
+                      <use xlink:href="img/sprite.svg#icon-edit"></use>
+                    </svg></a></div>
+              </div>
+              <div class="table__tr">
+                <div class="table__td" data-col="title">Title</div>
+                <div class="table__td" data-col="role">ADMIN</div>
+                <div class="table__td" data-col="service">Sales</div>
+                <div class="table__td" data-col="company">Nestlé</div>
+                <div class="table__td is-online" data-col="status"><span class="status">Connected</span><i class="icon-circle"></i></div>
+                <div class="table__td" data-col="date">29/02/2018</div>
+                <div class="table__td" data-col="actions"><a class="link-dots" href="#"><svg class="icon icon-dots ">
+                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                    </svg></a><a class="link-edit" href="#"><svg class="icon icon-edit ">
+                      <use xlink:href="img/sprite.svg#icon-edit"></use>
+                    </svg></a></div>
+              </div>
+              <div class="table__tr">
+                <div class="table__td" data-col="title">Title</div>
+                <div class="table__td" data-col="role">ADMIN</div>
+                <div class="table__td" data-col="service">R&D</div>
+                <div class="table__td" data-col="company">Aboutgoods</div>
+                <div class="table__td is-online" data-col="status"><span class="status">Connected</span><i class="icon-circle"></i></div>
+                <div class="table__td" data-col="date">19/02/2018</div>
+                <div class="table__td" data-col="actions"><a class="link-dots" href="#"><svg class="icon icon-dots ">
+                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                    </svg></a><a class="link-edit" href="#"><svg class="icon icon-edit ">
+                      <use xlink:href="img/sprite.svg#icon-edit"></use>
+                    </svg></a></div>
+              </div>
+              <div class="table__tr">
+                <div class="table__td" data-col="title">Title</div>
+                <div class="table__td" data-col="role">USER</div>
+                <div class="table__td" data-col="service">Production</div>
+                <div class="table__td" data-col="company">Aboutgoods</div>
+                <div class="table__td is-offline" data-col="status"><span class="status">Disconnected</span><i class="icon-circle"></i></div>
+                <div class="table__td" data-col="date">19/02/2018</div>
+                <div class="table__td" data-col="actions"><a class="link-dots" href="#"><svg class="icon icon-dots ">
+                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                    </svg></a><a class="link-edit" href="#"><svg class="icon icon-edit ">
+                      <use xlink:href="img/sprite.svg#icon-edit"></use>
+                    </svg></a></div>
+              </div>
+              <div class="table__tr">
+                <div class="table__td" data-col="title">Title</div>
+                <div class="table__td" data-col="role">ADMIN</div>
+                <div class="table__td" data-col="service">Production</div>
+                <div class="table__td" data-col="company">Aboutgoods</div>
+                <div class="table__td is-online" data-col="status"><span class="status">Connected</span><i class="icon-circle"></i></div>
+                <div class="table__td" data-col="date">19/02/2018</div>
+                <div class="table__td" data-col="actions"><a class="link-dots" href="#"><svg class="icon icon-dots ">
+                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                    </svg></a><a class="link-edit" href="#"><svg class="icon icon-edit ">
+                      <use xlink:href="img/sprite.svg#icon-edit"></use>
+                    </svg></a></div>
+              </div>
+              <div class="table__tr">
+                <div class="table__td" data-col="title">Title</div>
+                <div class="table__td" data-col="role">USER</div>
+                <div class="table__td" data-col="service">Sales</div>
+                <div class="table__td" data-col="company">Aboutgoods</div>
+                <div class="table__td is-offline" data-col="status"><span class="status">Disconnected</span><i class="icon-circle"></i></div>
+                <div class="table__td" data-col="date">19/02/2018</div>
+                <div class="table__td" data-col="actions"><a class="link-dots" href="#"><svg class="icon icon-dots ">
+                      <use xlink:href="img/sprite.svg#icon-dots"></use>
+                    </svg></a><a class="link-edit" href="#"><svg class="icon icon-edit ">
+                      <use xlink:href="img/sprite.svg#icon-edit"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

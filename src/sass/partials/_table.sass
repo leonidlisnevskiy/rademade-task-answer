@@ -1,0 +1,116 @@
+
+.table
+	border: 0.5px solid rgba(0, 0, 0, 0.048)
+	box-sizing: border-box
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.12)
+	border-radius: 5px
+	margin-bottom: 18px
+	.table__tr
+		display: table
+	.table__th,
+	.table__td
+		display: table-cell
+		padding: 20px
+		font-family: Source Sans Pro
+		font-weight: normal
+		line-height: normal
+		font-size: 14px
+		text-align: center
+		color: rgba(0, 0, 0, 0.5)
+		+r(1920)
+			width: calc(100%/7)
+		&[data-col="role"],
+		&[data-col="service"],
+		&[data-col="company"]
+			text-align: left
+		&[data-col="title"]
+			+r(1415)
+				width: 100px
+		&[data-col="role"]
+			+r(1415)
+				width: 130px
+		&[data-col="service"]
+			+r(1415)
+				width: 130px
+		&[data-col="company"]
+			+r(1415)
+				width: 150px
+			+r(1100)
+				width: 130px
+		&[data-col="status"]
+			+r(1415)
+				width: 170px
+			+r(1100)
+				width: 150px
+		&[data-col="date"]
+			+r(1415)
+				width: 120px
+			text-align: right
+		&[data-col="actions"]
+			text-align: right
+			padding-right: 60px
+			+r(1415)
+				padding-right: 30px
+				width: 130px
+	&__thead
+		.table__tr
+			background: #FFFFFF
+			box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.087)
+			border-radius: 2px
+		.table__th
+			&[data-col="status"]
+				text-align: right
+	.table__tr
+		width: 100%
+	&__tbody
+		.table__tr
+			background-color: $white
+			&:nth-child(even)
+				background-color: $mainBg
+		.table__td
+			&[data-col="actions"]
+				.link-edit
+					background-color: #C2CEFF
+					font-size: 13px
+					transition: background-color .33s ease-in-out
+					margin-left: 18px
+					+r(1180)
+						margin-left: 10px
+					&:hover
+						background-color: #3d61ff
+					.icon
+						vertical-align: middle
+				.link-dots
+					background-color: $white
+					font-size: 5px
+					.icon
+						vertical-align: middle
+				.link-edit,
+				.link-dots
+					display: inline-block
+					vertical-align: middle
+					height: 25px
+					width: 25px
+					line-height: 25px
+					border-radius: 50px
+					text-align: center
+			&[data-col="status"]
+				text-align: right
+				.icon-circle
+					display: inline-block
+					vertical-align: middle
+					border-radius: 50px
+					width: 10px
+					height: 10px
+				.status
+					margin-right: 20px
+					display: inline-block
+					vertical-align: middle
+			&.is-online
+				color: $green
+				.icon-circle
+					background-color: $green
+			&.is-offline
+				color: $red
+				.icon-circle
+					background-color: $red

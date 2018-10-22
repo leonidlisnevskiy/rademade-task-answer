@@ -1,0 +1,25 @@
+-
+	var items = [
+		{ link: 'Applications', sublinks: ['Nice app 1'], active: true},
+		{ link: 'Documentation'},
+		{ link: 'Settings' },
+		{ link: 'Support' },
+		{ link: 'Log out'}
+	]
+aside.sidebar
+	.sidebar__container
+		.sidebar__logo
+			.logo.sidebar__logo-icon
+				+icon('logo', 'logo__icon')
+			span.sidebar__title CRM
+			span.sidebar__meta test
+
+		ul.menu.sidebar__menu
+			each item in items
+				li.menu__item(class= (item.active === true ? "is-active" : undefined))
+					a(href="#" class="menu__link")= item.link
+					if item.sublinks
+						ul.menu__submenu
+							each sublink in item.sublinks
+								li.menu__item
+									a(href="#" class="menu__link")= sublink
