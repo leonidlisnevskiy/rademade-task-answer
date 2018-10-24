@@ -12,7 +12,7 @@ block content
 		// BEGIN controls
 		.controls
 			.container
-				.search
+				.search.search_controls
 					input(type="text" class="search__input" placeholder="Search for something…").input
 					button(class="search__btn" type="button")
 						+icon('search', 'search__icon')
@@ -21,7 +21,7 @@ block content
 					span(class="selected__counter") 4
 					p(class="selected__text") services enregistrés
 
-				button(class="btn controls__btn") Add
+				button(class="btn controls__btn btn_primary") Add
 		// END controls
 
 		include ./partials/_table

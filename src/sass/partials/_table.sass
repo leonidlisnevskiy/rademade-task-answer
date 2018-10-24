@@ -11,7 +11,6 @@
 	.table__td
 		display: table-cell
 		padding: 20px
-		font-family: Source Sans Pro
 		font-weight: normal
 		line-height: normal
 		font-size: 14px
@@ -23,35 +22,21 @@
 		&[data-col="service"],
 		&[data-col="company"]
 			text-align: left
-		&[data-col="title"]
-			+r(1415)
-				width: 100px
-		&[data-col="role"]
-			+r(1415)
-				width: 130px
-		&[data-col="service"]
-			+r(1415)
-				width: 130px
-		&[data-col="company"]
-			+r(1415)
-				width: 150px
-			+r(1100)
-				width: 130px
-		&[data-col="status"]
-			+r(1415)
-				width: 170px
-			+r(1100)
-				width: 150px
-		&[data-col="date"]
-			+r(1415)
-				width: 120px
-			text-align: right
+		&[data-col="date"],
 		&[data-col="actions"]
 			text-align: right
+		&[data-col="actions"]
 			padding-right: 60px
 			+r(1415)
 				padding-right: 30px
-				width: 130px
+				width: 15%
+		&[data-col="title"],
+		&[data-col="role"],
+		&[data-col="service"],
+		&[data-col="company"]
+		&[data-col="status"]
+			+r(1400)
+				width: 14%
 	&__thead
 		.table__tr
 			background: #FFFFFF
@@ -74,8 +59,6 @@
 					font-size: 13px
 					transition: background-color .33s ease-in-out
 					margin-left: 18px
-					+r(1180)
-						margin-left: 10px
 					&:hover
 						background-color: #3d61ff
 					.icon
@@ -99,18 +82,28 @@
 				.icon-circle
 					display: inline-block
 					vertical-align: middle
-					border-radius: 50px
 					width: 10px
 					height: 10px
 				.status
-					margin-right: 20px
+					padding-right: 20px
 					display: inline-block
 					vertical-align: middle
+					position: relative
+					&:after
+						content: ''
+						display: block
+						position: absolute
+						top: 50%
+						right: 0
+						transform: translateY(-50%)
+						border-radius: 50px
+						width: 10px
+						height: 10px
 			&.is-online
 				color: $green
-				.icon-circle
+				.status:after
 					background-color: $green
 			&.is-offline
 				color: $red
-				.icon-circle
+				.status:after
 					background-color: $red
